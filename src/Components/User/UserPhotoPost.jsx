@@ -30,7 +30,7 @@ const UserPhotoPost = () => {
 
     const token = window.localStorage.getItem('token');
     const {url, options} = PHOTO_POST(formData, token);
-    request(URL, options);
+    request(url, options);
   }
 
   function handleImgChange({target}){
@@ -56,10 +56,12 @@ const UserPhotoPost = () => {
         <Error error={error}/>
       </form>
       <div>
-        {img.preview && 
-        <div className={styles.preview} 
-        style={{backgroundImage:`url('${img.preview}')`}}
-        > </div> }
+        {img.preview && (
+        <div
+          className={styles.preview} 
+          style={{backgroundImage:`url('${img.preview}')`}}
+        ></div>
+        )}
       </div>
     </section>
   )
