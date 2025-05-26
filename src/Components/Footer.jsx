@@ -1,9 +1,16 @@
 import React from 'react'
 import styles from './CSS-modules/Footer.module.css'
+import Dogs from '../Assets/dogs-footer.svg?react';
+
 
 const Footer = () => {
   return (
-    <div>Footer</div>
+    <footer className={styles.footer}>
+      <Dogs/>
+      <p>
+        Dogs. Alguns direitos reservados.
+      </p>
+    </footer>
   )
 }
 
