@@ -40,7 +40,7 @@ const App = () => {
             
           <Footer />
         </UserStorage>
-      </HasRouter>
+      </HashRouter>
     </div>
   )
 }
